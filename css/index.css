@@ -1,3 +1,131 @@
+nav.navbar {
+  padding: 0.5em 0;
+}
+nav.navbar .navbar-brand {
+  padding: 0;
+}
+nav.navbar .navbar-brand img {
+  height: 50px;
+}
+
+header {
+  position: relative;
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  height: calc(100vh - 1em - 50px);
+  width: 100%;
+  overflow: hidden;
+}
+header picture {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+header picture img {
+  height: 100%;
+  width: 100%;
+}
+header picture:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+header .title {
+  position: absolute;
+  bottom: 3%;
+  left: 1%;
+  text-transform: uppercase;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+}
+header .title h1 {
+  font-size: calc(2rem + 3vw);
+  color: #FFF;
+}
+header .texts {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  font-size: calc(0.8rem + 0.5vw);
+  color: rgba(255, 255, 255, 0.6);
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+}
+header .image__1 {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+header .image__1 img, header .image__1 .hover__extend {
+  width: calc(100px + 10vw);
+  border-radius: 2px;
+}
+header .image__2 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+}
+header .image__2 img, header .image__2 .hover__extend {
+  width: calc(50px + 20vw);
+}
+header .image__contain {
+  z-index: 1;
+}
+header .image__contain .hover__extend {
+  display: none;
+}
+header .image__contain:hover {
+  z-index: 3;
+}
+header .image__contain:hover .hover__extend {
+  display: block;
+  animation-name: fadeInDown;
+  animation-duration: 0.6s;
+}
+header .image__contain:hover ~ .bg__black {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+header .bg__black {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+
+@media (max-width: 768px) {
+  header.header .image__contain {
+    display: none;
+  }
+  header.header .title {
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
+  }
+  header.header .title h1 {
+    font-size: calc(1.5em + 2vw);
+  }
+  header.header .texts {
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: calc(1em + 1vw);
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+  }
+}
 body {
   font-size: 18px;
 }

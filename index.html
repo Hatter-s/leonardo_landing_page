@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Leonardo da Vinci</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src=" assets/images/branding.jpg" alt="Leonardo portrait">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Source</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="../assets/images/header/mona_lisa_pc.jpg">
+      <source media="(min-width: 1px)" srcset="../assets/images/header/mona_lisa_mobile.jpg">
+      <img src="../assets/images/header/mona_lisa_pc.jpg" alt="Mona Lisa">
+    </picture>
+    <div class="title">
+      <h1>Leonardo da Vinci</h1>
+    </div>
+    <div class="texts">
+      <p>Universal Genius</p>
+      <p>Polymath</p>
+      <p>
+        Greatest painters of all time
+      </p>
+    </div>
+    <div class="image__1 image__contain">
+      <img src="../assets/images/header/leonardo_da_vinci_self-portrait.jpg" alt="self portrait">
+      <div class="hover__extend">
+        This portrait attributed to Francesco Melzi, c. 1515–1518, is the only certain contemporary depiction of
+        Leonardo.
+      </div>
+    </div>
+    <div class="image__2 image__contain">
+      <img src="../assets/images/header/leonardo_da_vinci_lucan_hohenstatt_portrait.jpg" alt="Lucanian portrait">
+      <div class="hover__extend">
+        The Lucan portrait of Leonardo da Vinci is a late 15th- or early 16th-century
+      </div>
+    </div>
+    <div class="bg__black"></div>
+  </header>
+  <script src="assets/bootstrap/bootstrap.min.js"></script>
 </body>
+
 </html>
