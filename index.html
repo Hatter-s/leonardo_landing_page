@@ -33,6 +33,7 @@
       </div>
     </div>
   </nav>
+  
   <header class="header">
     <picture class="background-picture">
       <source media="(min-width: 768px)" srcset="../assets/images/header/mona_lisa_pc.jpg">
@@ -64,6 +65,129 @@
     </div>
     <div class="bg__black"></div>
   </header>
+
+  <section class="arts">
+    <div class="title">
+      <h2>Arts</h2>
+    </div>
+    <div 
+      id="artsCarousel" 
+      class="carousel slide carousel-fade" 
+      data-bs-ride="carousel"
+      data-bs-interval="1000000000"
+    >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#artsCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#artsCarousel" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#artsCarousel" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#artsCarousel" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="../assets/images/arts/background/early_works/annunciazione.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/arts/background/early_works/adorazione_dei_magi_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/arts/background/early_works/adorazione_dei_magi.jpg" alt="">
+          </picture>
+          <h3>Early works</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/arts/early_works/battesimo_di_cristo.jpg" alt="">
+              <p class="name">The Baptism of Christ</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/early_works/madonna_benois.jpg" alt="">
+              <p class="name">Benois Madonna</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/early_works/madonna_of_the_carnation.jpg" alt="">
+              <p class="name">Madonna of the Carnation</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="../assets/images/arts/background/1480s/la_belle_ferroniere.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/arts/background/1480s/madonna_litta_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/arts/background/1480s/madonna_litta_mobile.jpg" alt="">
+          </picture>
+          <h3>Paintings of the 1480s</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/arts/1480s/portrait_of_a_musician.jpg" alt="">
+              <p class="name">Portrait of a Musician</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1480s/saint_jerome.jpg" alt="">
+              <p class="name">Saint Jerome</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1480s/vergine_delle_rocce.jpg" alt="">
+              <p class="name">Virgin of the Rocks</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="../assets/images/arts/background/1490s/the_last_supper.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/arts/background/1490s/lady_with_an_ermine_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/arts/background/1490s/lady_with_an_ermine_mobile.jpg" alt="">
+          </picture>
+          <h3>Paintings of the 1490s</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/arts/1490s/portrait_of_isabella_d'este.jpg" alt="">
+              <p class="name">Portrait of Isabella d'Este</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1490s/sala_delle_asse.jpg" alt="">
+              <p class="name">Sala delle Asse</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1490s/virgin_and_child.jpg" alt="">
+              <p class="name">The Virgin and Child with Saint Anne and Saint John the Baptist</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="../assets/images/arts/background/1500s/saint_john_the_baptist_pc.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/arts/background/1500s/saint_john_the_baptist_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/arts/background/1500s/saint_john_the_baptist_mobile.jpg" alt="">
+          </picture>
+          <h3>Paintings of the 1500s</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/arts/1500s/madonna_of_the_yarnwinder.jpg" alt="">
+              <p class="name">Madonna of the Yarnwinder</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1500s/mona_lisa.jpg" alt="">
+              <p class="name">Mona Lisa</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/arts/1500s/salvator_mundic.jpg" alt="">
+              <p class="name">Salvator Mundic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#artsCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel-control" type="button" data-bs-target="#artsCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
   <script src="assets/bootstrap/bootstrap.min.js"></script>
 </body>
 
