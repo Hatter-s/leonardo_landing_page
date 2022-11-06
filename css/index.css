@@ -277,7 +277,6 @@ header .bg__black {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -353,7 +352,6 @@ header .bg__black {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
