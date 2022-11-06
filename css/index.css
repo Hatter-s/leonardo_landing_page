@@ -383,11 +383,17 @@ header .bg__black {
 }
 
 @media (max-width: 576px) {
-  .sciences #sciencesCarousel .imgs {
+  .sciences #sciencesCarousel .carousel-inner .carousel-item .imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     max-height: 48vh;
     flex-flow: column nowrap;
-    justify-content: start;
+    align-items: start;
     overflow: scroll;
+  }
+  .sciences #sciencesCarousel .carousel-inner .carousel-item .imgs .img {
+    max-width: 100%;
   }
 }
 footer {

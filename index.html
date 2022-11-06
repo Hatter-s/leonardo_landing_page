@@ -15,9 +15,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand animate__animated animate__fadeIn" href="index.html">
         <img src="assets/images/branding.jpg" alt="Leonardo portrait">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,8 +26,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/resource">Resource</a>
+          <li class="nav-item animate__animated animate__fadeInRight">
+            <a class="nav-link" href="resource.html">Resource</a>
           </li>
         </ul>
       </div>
@@ -243,20 +243,21 @@
           <div class="imgs">
             <div class="img" >
               <img src="assets/images/sciences/engineering/design_for_a_flying_machine.jpg" alt="">
-              <p class="name">A design for a flying machine (c. 1488), first presented in the Codex on the Flight of Birds</p>
-            </div>
-            <div class="img" >
-              <img src="assets/images/sciences/engineering/helicopter.jfif" alt="">
-              <p class="name">An aerial screw (c. 1489), suggestive of a helicopter, from the Codex Atlanticus</p>
-            </div>
-            <div class="img" >
-              <img src="assets/images/sciences/engineering/machine_for_grinding_convex_lenses.jfif" alt="">
-              <p class="name">A machine for grinding convex lenses</p>
+              <p class="name">A design for a flying machine (c. 1488)</p>
             </div>
             <div class="img" >
               <img src="assets/images/sciences/engineering/scythed_chariot_and_armoured_tank.jfif" alt="">
               <p class="name">Leonardo's drawings of a scythed chariot and a fighting vehicle</p>
             </div>
+            <div class="img" >
+              <img src="assets/images/sciences/engineering/helicopter.jfif" alt="">
+              <p class="name">An aerial screw (c. 1489), suggestive of a helicopter</p>
+            </div>
+            <div class="img" >
+              <img src="assets/images/sciences/engineering/machine_for_grinding_convex_lenses.jfif" alt="">
+              <p class="name">A machine for grinding convex lenses</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -283,6 +284,12 @@
     </p>
   </footer>
 
+  <script>
+    const imgs = document.querySelectorAll('img');
+    imgs.forEach(img => img.setAttribute('loading', 'lazy'));
+
+
+  </script>
   <script src="assets/bootstrap/bootstrap.min.js"></script>
 </body>
 
