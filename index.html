@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src=" assets/images/branding.jpg" alt="Leonardo portrait">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Source</a>
+            <a class="nav-link" href="/resource.html">Resource</a>
           </li>
         </ul>
       </div>
@@ -188,6 +188,101 @@
       </button>
     </div>
   </section>
+
+  <section class="sciences">
+    <div class="title">
+      <h2>Science and inventions</h2>
+    </div>
+    <div 
+      id="sciencesCarousel" 
+      class="carousel slide carousel-fade" 
+      data-bs-ride="carousel"
+      data-bs-interval="1000000000"
+    >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#sciencesCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#sciencesCarousel" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="../assets/images/sciences/anatomy/golden_horn_bridge_model_right_pc.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/sciences/anatomy/flywheel_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/sciences/anatomy/flywheel_mobile.jpg" alt="">
+          </picture>
+          <h3>Anatomy</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/sciences/anatomy/leonardo_anatomy_of_dog_and_man.jfif" alt="">
+              <p class="name">Comparison of the leg of a man and a dog.</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/anatomy/proportions_of_the_head.jpg" alt="">
+              <p class="name">Study of the proportions of the head.</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/anatomy/view_of_a_skull_III.jpg" alt="">
+              <p class="name">Dissection of the skull.</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/anatomy/views_of_a_foetus_in_the_womb.jpg" alt="">
+              <p class="name">Studies of a fœtus from Leonardo's journals</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source srcset="../assets/images/sciences/engineering/château_de_castelnaud_pc.jpg" media="(min-width: 992px)">
+            <source srcset="../assets/images/sciences/engineering/parachute_tablet.jpg" media="(min-width: 576px)">
+            <img src="../assets/images/sciences/engineering/parachute_mobile.jpg" alt="">
+          </picture>
+          <h3>Engineering</h3>
+          <div class="imgs">
+            <div class="img" >
+              <img src="../assets/images/sciences/engineering/design_for_a_flying_machine.jpg" alt="">
+              <p class="name">A design for a flying machine (c. 1488), first presented in the Codex on the Flight of Birds</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/engineering/helicopter.jfif" alt="">
+              <p class="name">An aerial screw (c. 1489), suggestive of a helicopter, from the Codex Atlanticus</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/engineering/machine_for_grinding_convex_lenses.jfif" alt="">
+              <p class="name">A machine for grinding convex lenses</p>
+            </div>
+            <div class="img" >
+              <img src="../assets/images/sciences/engineering/scythed_chariot_and_armoured_tank.jfif" alt="">
+              <p class="name">Leonardo's drawings of a scythed chariot and a fighting vehicle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#sciencesCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel-control" type="button" data-bs-target="#sciencesCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Make with 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg>
+       by
+    </p>
+  </footer>
+
   <script src="assets/bootstrap/bootstrap.min.js"></script>
 </body>
 

@@ -308,6 +308,135 @@ header .bg__black {
   margin-right: 1em;
 }
 
+.sciences {
+  width: 100%;
+  position: relative;
+}
+.sciences .title {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  color: #FFF;
+  z-index: 2;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item picture {
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item picture::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item picture img {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item h3 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #FFF;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item .imgs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75vw;
+  gap: 0 7vw;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item .imgs .img {
+  flex: 1 1 0;
+  max-width: 30%;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item .imgs .img img {
+  min-width: 100px;
+  width: 100%;
+}
+.sciences #sciencesCarousel .carousel-inner .carousel-item .imgs .img .name {
+  text-align: center;
+  color: #FFF;
+}
+.sciences #sciencesCarousel .carousel-control {
+  width: auto;
+}
+.sciences #sciencesCarousel .carousel-control.carousel-control-prev {
+  margin-left: 1em;
+}
+.sciences #sciencesCarousel .carousel-control.carousel-control-next {
+  margin-right: 1em;
+}
+
+@media (max-width: 576px) {
+  .sciences #sciencesCarousel .imgs {
+    max-height: 48vh;
+    flex-flow: column nowrap;
+    justify-content: start;
+    overflow: scroll;
+  }
+}
+footer {
+  background-color: var(--bs-dark);
+  padding: 0.25em 1em;
+  text-align: end;
+}
+footer p {
+  color: #FFF;
+  margin-bottom: 0;
+  font-size: 0.75em;
+}
+footer p svg {
+  color: #E0144C;
+}
+
+header.resource {
+  height: 20vh;
+}
+header.resource .title {
+  top: 10%;
+}
+header.resource .title h1 {
+  background-clip: text;
+}
+
+main {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+main .list-group .list-group-item {
+  padding: 0;
+}
+main .list-group .list-group-item a {
+  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  color: #404258;
+  text-decoration: none;
+  display: block;
+}
+main .list-group .list-group-item:hover a {
+  opacity: 0.7;
+  animation-name: slideInUp;
+  animation-duration: 0.5s;
+}
+
 body {
   font-size: 18px;
   font-weight: 400;
